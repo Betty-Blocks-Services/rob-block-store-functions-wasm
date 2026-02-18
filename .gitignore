@@ -1,2 +1,25 @@
+# The directory Mix will write compiled artifacts to.
+/_build/
+
+# If you run "mix test --cover", coverage assets end up here.
+/cover/
+
+# The directory Mix downloads your dependencies sources to.
+/deps/
+*/**/deps/*
+
+# If the VM crashes, it generates a dump, let's ignore it too.
+erl_crash.dump
+
+# Rust output of the components
+/target/
+*/**/target/*
+
+# Ignore wasmcloud build artifacts
+*/**/build/*
+
+# publish files
+/node_modules/
+
 *.wasm
 .DS_Store

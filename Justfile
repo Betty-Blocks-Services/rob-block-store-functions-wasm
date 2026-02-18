@@ -1,33 +1,8 @@
 
 build:
-  @just build-rust
-  @just build-go
   @just build-typescript
 
-build-rust:
-  cd rust/concat-text && . ./build.sh
-  cp rust/concat-text/concat_text.wasm dist/rust_concat_text.wasm
-  cd rust/http-request && . ./build.sh
-  cp rust/http-request/http_request.wasm dist/rust_http_request.wasm
-  cd rust/nth-prime-number && . ./build.sh
-  cp rust/nth-prime-number/nth_prime_number.wasm dist/rust_nth_prime_number.wasm
-  cd rust/calculator && . ./build.sh
-  cp rust/calculator/calculator.wasm dist/rust_calculator.wasm
-build-go:
-  cd go/concat-text && . ./build.sh
-  cp go/concat-text/concat_text.wasm dist/go_concat_text.wasm
-  cd go/http-request && . ./build.sh
-  cp go/http-request/http_request.wasm dist/go_http_request.wasm
-  cd go/nth-prime-number && . ./build.sh
-  cp go/nth-prime-number/nth_prime_number.wasm dist/go_nth_prime_number.wasm
-  cd go/calculator && . ./build.sh
-  cp go/calculator/calculator.wasm dist/go_calculator.wasm
+
 build-typescript:
-  cd typescript/concat-text && . ./build.sh
-  cp typescript/concat-text/concat_text.wasm dist/typescript_concat_text.wasm
-  cd typescript/http-request && . ./build.sh
-  cp typescript/http-request/http_request.wasm dist/typescript_http_request.wasm
-  cd typescript/nth-prime-number && . ./build.sh
-  cp typescript/nth-prime-number/nth_prime_number.wasm dist/typescript_nth_prime_number.wasm
-  cd typescript/calculator && . ./build.sh
-  cp typescript/calculator/calculator.wasm dist/typescript_calculator.wasm
+  cd typescript/format-endpoint-result && . ./build.sh
+  cp typescript/format-endpoint-result/format_endpoint_result.wasm dist/typescript_format_endpoint_result.wasm

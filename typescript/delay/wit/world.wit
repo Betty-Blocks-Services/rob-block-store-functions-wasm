@@ -1,0 +1,9 @@
+package betty-blocks:delay@0.1.0;
+
+interface delay {
+  delay-impl: func(milliseconds: f64) -> result;
+}
+
+world main {
+  export delay;
+}
