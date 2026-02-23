@@ -1,0 +1,18 @@
+package betty-blocks:format-endpoint-result@0.1.0;
+
+interface format-endpoint-result {
+  type json-string = string;
+
+  record output {
+    headers: list<string>,
+    body: string,
+    status-code: u16,
+  }
+  
+  format-endpoint-result: func(headers: json-string, body: option<string>, body-parameters: json-string, status-code: u16) -> output;
+}
+
+world main {
+  export format-endpoint-result;
+}
+
